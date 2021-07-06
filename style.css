@@ -27,6 +27,9 @@
     display: none;
 }
 
+
+
+
 @media(max-width: 576px) {
     .nav .ul {
         display: none;
@@ -45,7 +48,7 @@
         position: fixed;
         top:0;
         left: -150px;
-        transition: 1.3s;
+        transition: all 1.3s;
     }
     .nav2 ul {
         width:100%;
@@ -55,17 +58,42 @@
     .nav2 ul li {
         width:fit-content;
         color:yellow;
-        padding: 20px;
+        padding: 10px;
         margin: auto;
         
     }
-    .nav2 ul li:hover {
-       color: white;
-    }
+   
     .onclick {
         left:0;
     }
 
+/* SUBMENU
+ -------- sub-menu slide and rotate arrow --- */
 
+.sub-menu {
+    height: 0px; 
+    overflow: hidden;
+    transition: 1s;
+}
+.activeSubMenu {
+  overflow: hidden;
+  height: 50px;
+  transition: 1s;
+}
+.fa-arrow-right {
+    transition: ease-in-out .5s;
+}
+.rotateArrow {
+    transition: ease-in-out .5s;
+    transform: rotate(90deg);
+}
+.nav2 .styling li {
+    width:fit-content;
+    padding: 5px;
+   }
+
+
+
+/* --- End sub-menu slide --- */
 
 }
